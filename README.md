@@ -66,6 +66,11 @@ The dashboard simplifies complex home management tasks by offering features like
 ## Keywords
 Smart Home Dashboard, Centralized Control, Home Automation, Real-Time Monitoring, Customizable Interface, Automation Options, Voice Assistant Integration, Device Categorization, Energy Efficiency, Notifications and Alerts, Scene Control, Third-Party Integration, Scheduling, User Profiles, Connected Experience
 
----
+## 📸 Screenshots
+### Home Page
+![Home Page](https://github.com/Konda-coder/Smart-Home-Dashboard/blob/171251285ca90a91c1208f13646fd72bf3447872/Screenshot%20(488).png)
 
-Feel free to contribute to this project by submitting pull requests or opening issues for improvements.
+### Controls page
+![Controls Page](https://github.com/Konda-coder/Smart-Home-Dashboard/blob/171251285ca90a91c1208f13646fd72bf3447872/Screenshot%20(492).png)
+
+
