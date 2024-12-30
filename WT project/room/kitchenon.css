@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+
+}
+
+.contain input {
+    padding: 11px ;
+    width:80%;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+.contain {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 12%;
+    background-color:#B6B4C2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.device {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.device img, .device i {
+    width: 40px;
+    height: 40px;
+}
+
+.device button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.device button.off {
+    background-color: #f44336;
+}
+
+.device button:hover {
+    opacity: 0.9;
+}
+
+.device-logo {
+    display: flex;
+    align-items: center;
+}
+
+.device-logo img, .device-logo i {
+    margin-right: 10px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color:#66bb6a;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}

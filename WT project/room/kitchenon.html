@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Devices Control</title>
+    <link rel="stylesheet" href="kitchenon.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="contain"><br><br>
+        <h1>Kitchen Devices Control</h1>
+<br>
+    
+<div class="device">
+    <div class="device-logo">
+        <i class="fas fa-lightbulb"></i> 
+        <span>Lights</span>
+    </div>
+    <label class="switch">
+        <input type="checkbox" id="light-toggle" onchange="toggleDevice('light')">
+        <span class="slider"></span>
+    </label>
+</div>
+
+<div class="device">
+    <div class="device-logo">
+        <i class="fas fa-fan"></i>
+        <span>Exhaust Fan</span>
+    </div>
+    <label class="switch">
+        <input type="checkbox" id="fan-toggle" onchange="toggleDevice('fan')">
+        <span class="slider"></span>
+    </label>
+</div>
+
+<div class="device">
+    <div class="device-logo">
+        <i class="fas fa-thermometer-half"></i> 
+        <span>Oven</span>
+    </div>
+    <label class="switch">
+        <input type="checkbox" id="thermostat-toggle" onchange="toggleDevice('thermostat')">
+        <span class="slider"></span>
+    </label>
+</div>
+
+<div class="device">
+    <div class="device-logo">
+        <i class="fas fa-tv"></i> 
+        <span>Freezer</span>
+    </div>
+    <label class="switch">
+        <input type="checkbox" id="tv-toggle" onchange="toggleDevice('tv')">
+        <span class="slider"></span>
+    </label>
+</div>
+
+<div class="device">
+    <div class="device-logo">
+        <i class="fas fa-wind"></i> 
+        <span>Chimni</span>
+    </div>
+    <label class="switch">
+        <input type="checkbox" id="ac-toggle" onchange="toggleDevice('ac')">
+        <span class="slider"></span>
+    </label>
+</div>
+
+<script>
+    function toggleDevice(device) {
+        const checkbox = document.getElementById(`${device}-toggle`);
+        if (checkbox.checked) {
+            console.log(device + ' is turned ON');
+        } else {
+            console.log(device + ' is turned OFF');
+        }
+    }
+</script>
+
+</body>
+</html>
